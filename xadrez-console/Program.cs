@@ -1,4 +1,5 @@
 ﻿using tabuleiro;
+using System;
 
 namespace xadrez_console {
     class Program {
@@ -6,7 +7,7 @@ namespace xadrez_console {
 
             Tabuleiro tab = new Tabuleiro(8, 8);
 
-            
+            Tela.imprimirTabuleiro(tab);
 
         }
     }
