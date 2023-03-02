@@ -16,5 +16,12 @@
             return Pecas[linha, coluna];
         }
 
+
+        public void ColocarPeca(Peca p, Posicao pos) {
+            Pecas[pos.Linha, pos.Coluna] = p; // jogando a peça P lá na matriz de Peças
+            p.Posicao = pos;
+        }
+
+
     }
 }

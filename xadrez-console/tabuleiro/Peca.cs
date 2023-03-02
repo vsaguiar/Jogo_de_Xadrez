@@ -6,8 +6,8 @@
         public int QuantidadeMovimentos { get; protected set; }
         public Tabuleiro Tab { get; protected set; }
 
-        public Peca(Posicao posicao, Tabuleiro tab, Cor cor) {
-            Posicao = posicao;
+        public Peca(Tabuleiro tab, Cor cor) {
+            Posicao = null;
             Tab = tab;
             Cor = cor;
             QuantidadeMovimentos = 0;
