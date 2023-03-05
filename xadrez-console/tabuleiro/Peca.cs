@@ -13,7 +13,9 @@
             QuantidadeMovimentos = 0;
         }
 
-
+        public void incrementarQteMovimentos() {
+            QuantidadeMovimentos++;
+        }
 
 
     }
