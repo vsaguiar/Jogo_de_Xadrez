@@ -17,8 +17,23 @@
             QuantidadeMovimentos++;
         }
 
-        public abstract bool[,] movimentosPossiveis();
+        public bool ExisteMovimentosPossiveis() {
+            bool[,] mat = movimentosPossiveis();
+            for (int i = 0; i < Tab.Linhas; i++) {
+                for (int j = 0; j < Tab.Colunas; j++) {
+                    if (mat[i, j]) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
 
+        public bool PodeMoverPara(Posicao pos) {
+            return movimentosPossiveis()[pos.Linha, pos.Coluna];
+        }
+
+        public abstract bool[,] movimentosPossiveis();
 
     }
 }
