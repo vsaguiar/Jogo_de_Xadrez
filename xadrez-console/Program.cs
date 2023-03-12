@@ -41,6 +41,8 @@ namespace xadrez_console {
                         Console.ReadLine(); // esperando o usuário digitar qualquer tecla para repitir a jogada 
                     }
                 }
+                Console.Clear();
+                Tela.ImprimirPartida(partida);
             }
             catch (TabuleiroException e) {
                 Console.WriteLine(e.Message);
