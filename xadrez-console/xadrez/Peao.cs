@@ -11,7 +11,7 @@ namespace xadrez {
 
         private bool existeInimigo(Posicao pos) {
             Peca p = Tab.peca(pos);
-            return p == null || p.Cor != Cor;
+            return p != null && p.Cor != Cor;
         }
 
         private bool livre(Posicao pos) {
